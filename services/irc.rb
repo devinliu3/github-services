@@ -62,7 +62,10 @@ class Service::IRC < Service
       self.puts "PART #{room}" unless without_join
     end
 
-    self.puts "QUIT"
+    self.puts "QUIT" b
+    
+    
+    afadfafsafdffd
     self.gets until self.eof?
   rescue SocketError => boom
     if boom.to_s =~ /getaddrinfo: Name or service not known/
